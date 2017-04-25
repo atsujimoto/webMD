@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Web MD</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+		<div class="container">
+			<%- body %>
+			<hr>
+			<a href="/" class="btn btn-primary">Home</a>
+			<a href="/diseases" class="btn btn-info">List of Diseases</a>
+			<a href="/symptoms" class="btn btn-info">List of Symptoms</a>
+            <a href="/diseases/add" class="btn btn-success">Create a Disease</a>
+            <a href="/symptoms/add" class="btn btn-success">Create a Symptom</a>
+		</div>
+        <script src="/js/main.js"></script>
+    </body>
+</html>

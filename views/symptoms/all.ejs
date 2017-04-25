@@ -1,0 +1,12 @@
+<div class="text-center">
+<h1>Do you have any of these symptoms?</h1>
+	<% symptoms.forEach(function(symptom) { %>
+			<div>
+				<a href="symptoms/<%= symptom.id %>">
+					<%= symptom.name %>
+				</a>
+				<span> - </span>
+				<span><%= symptom.description %></span>
+			</div>
+	<% }); %>
+</div>

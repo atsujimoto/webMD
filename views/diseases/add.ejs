@@ -1,0 +1,33 @@
+<h1>Create a New Disease</h1>
+
+<form action="/diseases" method="POST">
+	<div class="form-group">
+		<label for="name">Name:</label>
+		<input type="text" name="name" placeholder="Name of disease" class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="description">Description:</label>
+		<textarea name="description" placeholder="Description of disease" cols="30" rows="10" class="form-control"></textarea>
+	</div>
+	<div class="form-group">
+		<label for="isTerminal">Is it terminal?</label>
+		<select name="isTerminal">
+			<option value="true">Yes</option>
+			<option value="false">No</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<label for="severity">Severity:</label>
+		<input type="number" name="severity" placeholder="Severity of disease (1 - 10)" class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="transmission">Transmission:</label>
+		<input type="text" name="transmission" placeholder="How is the disease transmitted?" class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="symptoms">Symptoms:</label>
+		<input type="text" name="symptoms" placeholder="What are the symptoms?" class="form-control">
+	</div>
+	<input type="submit" value="Add disease" class="btn btn-success">
+
+</form>
