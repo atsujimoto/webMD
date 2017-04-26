@@ -1,11 +1,24 @@
 <div class="text-center">
-		<h1>List of Diseases</h1>
-		<h3>Gotta catch em all!</h3>
-	<% diseases.forEach(function(disease) { %>
+	<div class="container">
+		<div class="row flex">
+			<div class="col-sm">
+				<img src="/img/diseases.jpg" alt="germs">
+			</div>
+			<div class="col-sm">
+				<h1>List of Diseases</h1>
+				<h3>Gotta catch em all!</h3>
+			</div>
+		</div>
+	</div>
+		<ul>
+		<% diseases.forEach(function(disease) { %>
+			<li class="list-group-item">
 				<a href="diseases/<%= disease.id %>">
 					<p class="text-danger">
 						<%= disease.name %>
 					</p>
 				</a>
-	<% }); %>
+			</li>
+		<% }); %>
+		</ul>
 </div>

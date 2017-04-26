@@ -1,0 +1,15 @@
+.col-6 {
+    width: 66%;
+}
+
+.col-3 {
+    width: 33%;
+}
+
+.flex {
+    display: flex;
+}
+
+.col-sm img {
+    width: 100%;
+}

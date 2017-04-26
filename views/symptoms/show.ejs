@@ -1,0 +1,11 @@
+<h1><%= symptom.name %></h1>
+<p><%= symptom.description %></p>
+<h3>Transmission modes: <%= symptom.transmission %></h3>
+<h3>The following diseases are associated with this particular symptom:</h3>
+<ul class="list-group">
+<% symptom.diseases.forEach(function(disease) {%>
+		<li class="list-group-item-danger">
+			<%= disease.name %>
+		</li>
+<% }); %>
+</ul>
